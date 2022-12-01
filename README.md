@@ -2,7 +2,7 @@
 
 Projeto de site newsletter para a comunidade [HackoonSpace](https://hackoonspace.com), utilizando TypeScript, Next.js, React.js, integrações com a API do [Mailchimp](https://mailchimp.com/pt-br/) e [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3) do Google. 
 
-É possível acessá-la por meio [deste link](https://newsletter-hackoon.herokuapp.com/).
+É possível acessá-la por meio [deste link](https://hacka-newsletter-v2.vercel.app/).
 
 ## Configuração de ambiente
 
