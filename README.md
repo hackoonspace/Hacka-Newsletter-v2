@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hacka Newsletter v2.0
 
-## Getting Started
+Projeto de site newsletter para a comunidade [HackoonSpace](https://hackoonspace.com), utilizando TypeScript, Next.js, React.js, integrações com a API do [Mailchimp](https://mailchimp.com/pt-br/) e [reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3) do Google. 
 
-First, run the development server:
+É possível acessá-la por meio [deste link](https://newsletter-hackoon.herokuapp.com/).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Configuração de ambiente
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para quem deseja executar este projeto em sua própria máquina, é necessário:
+- Ter o Node.js e o NPM instalados em sua máquina
+- Instalar os pacotes requeridos em `package.json`
+- Criar um arquivo `.env.local` com as credenciais necessárias (usar `.env.example` como base)
+- Utilizar o script `npm run build` para compilar os arquivos `.tsx`
+- Utilizar o script `npm run start` para executar
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Variáveis de ambiente
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+As variáveis de ambiente necessárias para este projeto são:
+- `MAILCHIMP_API_KEY`: chave de API da plataforma Mailchimp
+- `MAILCHIMP_PREFIX`: prefixo do servidor em que sua conta Mailchimp se localiza
+- `MAILCHIMP_LIST_ID`: ID da lista de contatos criada na sua conta Mailchimp
+- `RECAPTCHA_SECRET_KEY`: Chave secreta (usada no servidor) do reCAPTCHA V3
+- `NEXT_PUBLIC_RECAPTCHA_PUBLIC_KEY`: Chave pública (usada no cliente) do reCAPTCHA V3
+- `CONTENT_SECURITY_POLICE_GOOGLE_HASH`: Hash 256 do script inline do Google reCAPTCHA V3 ([leia mais sobre isso e saiba como obter aqui](https://content-security-policy.com/hash/))
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## A fazer
 
-## Learn More
+- DNS próprio (talvez subdomínio no domínio do HackoonSpace)
+- Mandar e-mail ao se cadastrar/descadastrar na newsletter
 
-To learn more about Next.js, take a look at the following resources:
+## Imagens
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Página principal do site](https://github.com/hackoonspace/Hacka-Newsletter-v2/blob/main/docs/img1.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Autores:
+- Marcus Vinícius Natrielli Garcia ([@InfiniteMarcus](https://github.com/InfiniteMarcus))
