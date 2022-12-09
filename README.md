@@ -4,7 +4,7 @@ Projeto de site newsletter para a comunidade [HackoonSpace](https://hackoonspace
 
 É possível acessá-la por meio [deste link](https://hacka-newsletter-v2.vercel.app/).
 
-Acesse a versão 1.0 [cliando neste link](https://github.com/hackoonspace/Hacka-Newsletter-v1).
+[Acesse este repositório](https://github.com/hackoonspace/Hacka-Newsletter-v1) para visualizar a versão 1.0 desta Newsletter, sem React.
 
 ## Configuração de ambiente
 
